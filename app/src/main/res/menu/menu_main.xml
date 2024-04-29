@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cse340.example.test_optionsbar.MainActivity">
+
+    <item
+        android:id="@+id/dropdown_menu"
+        android:icon="@drawable/outline_menu_24"
+        android:title="@string/colorpicker_menu_title"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/round_colorpicker_menuitem"
+                android:title="@string/colorwheel"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/my_colorpicker_menuitem"
+                android:title="@string/mycolor"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/close_colorpicker"
+                android:title="@string/close_picker_string"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
